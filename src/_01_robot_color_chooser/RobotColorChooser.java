@@ -12,9 +12,13 @@ public class RobotColorChooser {
 		//1. Create a new Robot
 		Robot bo = new Robot();
 		//3. Ask the user what color they would like the robot to draw
-		String col = JOptionPane.showInputDialog("What color out of ROYGBP is you favorite?");
+		
 		
 		//5. Use an if/else statement to set the pen color that the user requested
+		for (int i = 0; i < 4; i++) {
+			
+		String col = JOptionPane.showInputDialog("What color out of ROYGBP is you favorite?");
+		
 		if(col.equalsIgnoreCase("Red")) {
 			bo.setPenColor(255, 4, 0);
 		}
@@ -41,9 +45,12 @@ public class RobotColorChooser {
         //7. Put a loop around your code so that you keep asking the user for more colors & drawing them
 		
 		//4. Set the pen width to 10
-		
+		bo.setPenWidth(10);
 	    //2. Make the robot draw a shape (this will take more than one line of code)
-
+		bo.penDown();
+		bo.setSpeed(10);
+		bo.move(200);
+		bo.turn(90);
 
 	}
-}
+}}
