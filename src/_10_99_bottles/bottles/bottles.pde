@@ -1,4 +1,8 @@
 int bob = 99;
+while( bob > 0) {
+if (bob == 1) {
+
+}
 
 for (int i = 0; i < 98; i = i+1){
   print(bob + lycOne + bob + lycOne;
