@@ -1,11 +1,19 @@
-void draw(int tomX, int tomY) {
-     fill(#FFF700);
-     ellipse( 50,50, 60, 60);
+void drawBody(int tomX, int tomY) {
+  for (int i = 0; i < 20; i++){
+     fill(#000000);
+     ellipse( tomX, tomY, 60, 60);
+     tomX=tomX-20;
+     tomY=tomY-20;
+     fill(#EDFF03);
+     ellipse(tomX,tomY,60,60);
+     tomX=tomX-20;
+     tomY=tomY-20;
+     
 /*Use a loop to make a body for the Bee!
 Then put his head on using drawBeeFace(x,y)
 Use Modulo to make the colors alternate 
 */
-}
+}}
 
 void drawFlower(int x, int y) {
      noStroke();
@@ -47,5 +55,6 @@ void setup() {
      size(500, 500);
      background(160, 160, 160);
       drawFlower(350, 100);
-   
+      drawBody (80,330);
+      drawBeeFace(100,350);
 }

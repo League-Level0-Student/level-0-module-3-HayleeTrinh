@@ -1,19 +1,13 @@
 int bob = 99;
-while( bob > 0) {
-if (bob == 1) {
 
+for (int i = 0; i < 98; i++){
+  print(bob + " bottles of beer on a wall. " + bob + " bottles of beer!");
+  bob = bob-1;
+  print("Take one down, pass it around." + bob + " bottles of beer on the wall!");
 }
-
-for (int i = 0; i < 98; i = i+1){
-  print(bob + lycOne + bob + lycOne;
-  bob=bob-1;
-  print(lycTwo + bob + lycOne);
+if( bob > 0) {
+print("No more bottles of beer on the wall. No more bottles of beer!");
+bob= bob+98;
+print("Go to the store and but some more." + bob + " bottles of beer on the wall!");
 }
   
-  void lycOne(){
-    print( "bottles of beer on the wall, ");
-  }
-  void lycTwo(){
-    print( "Go to the store and buy some more, ");
-  }
-    
